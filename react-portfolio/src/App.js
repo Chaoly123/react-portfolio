@@ -1,3 +1,6 @@
+import React from 'react';
+import Header from './page/header.js';
+
 import logo from './logo.svg';
 import './App.css';
 
