@@ -1,0 +1,22 @@
+[
+    {
+        
+        "name": "Covid-19 Locator",
+        "description" : "This is an web application that helps and encourage residences to be positively vacciate and meet the Presidential goal",
+        "link": "https://jchosay.github.io/group-pj1-covid-goal-track/",
+        "linkName": "C-19 Locator"
+    },
+    {
+        
+        "name1": "Code Quiz",
+        "description" : "This is a Code Quiz that test your ablities on coding",
+        "link": "https://chaoly123.github.io/coding-quiz/",
+        "linkName": "Code Quiz"
+    },
+    {
+        "name2": "Planner",
+        "description": "Here is an application that takes your notes and into your daily planner",
+        "link": "https://chaoly123.github.io/planner-jquery/",
+        "linkName": "Planner-JQuery"
+    }
+]
