@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../helpers';
+import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -44,16 +44,29 @@ function Contact() {
     }
 
     return (
-        <div>
+        <div className="row justify-content-center">
+
             <form className="contact-me">
-                <input value={name} name="name" onChange={handleInputChange} onBlur={handleInputBlur} type="text" placeholder="name" />
-                <br></br>
-                <input value={email} name="email" onChange={handleInputChange} onBlur={handleInputBlur} type="email" placeholder="email" />
-                <br></br>
-                <textarea>
-                    <input value={message} name="message" onChange={handleInputChange} onBlur={handleInputBlur} type="message" placeholder="message" />
-                </textarea>
-                <button className="submit-btn" type="button" onClick={handleFormSubmit}>Submit</button>
+                <div className="col 5">
+                    <div className="contact-me-group">
+                        <label for="name">Name</label>
+                        <input value={name} name="name" onChange={handleInputChange} onBlur={handleInputBlur} type="text" placeholder="Enter Your Name" />
+                        <br></br>
+                    </div>
+                    <div className="contact-me-group">
+                        <label for="email">Email</label>
+                        <input value={email} name="email" onChange={handleInputChange} onBlur={handleInputBlur} type="email" placeholder="Enter Your Email" />
+                        <br></br>
+                    </div>
+                    <div className="contact-me-group">
+                        <label for="description">Description</label>
+                        <textarea name="message" class="form-control" rows="4">
+                            <input value={message} name="message" onChange={handleInputChange} onBlur={handleInputBlur} type="message" placeholder="message" />
+                        </textarea>
+                    </div>
+                    <br></br>
+                </div>
+                        <button className="submit-btn" type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
             {errorMessage && (
                 <div>
